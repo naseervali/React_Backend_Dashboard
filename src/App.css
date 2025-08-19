@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Carrois Gothic", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar */
+.navSection {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF2E00;
+    align-items: center;
+    color: white;
+    padding: 0 20px;
+    font-size: large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userAuth span {
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Sidebar */
+.sidebarSection {
+    width: 100%;
+    min-width: 200px;
+    height: 95vh;
+    padding-top: 10px;
+    background-color:#2E294E;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebarSection ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.collectionSection {
+    display: flex;
+}
+
+/* Login section */
+.loginSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Register section */
+.registerSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.authForm {
+    width: 100%;
+    max-width: 50%;
+    margin-top: -230px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.authForm input {
+    width: 100%;
+    max-width: 55%;
+    height: 1.4rem;
+    border-radius: 5px;
+}
+
+.authForm label {
+    width: 100%;
+    max-width: 55%;
+    font-weight: 400;
+}
+
+/* Add Firm Section */
+.firmSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableForm {
+    width: 100%;
+    max-width: 50%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: -9px 18px 8px -5px rgba(0,0,0,0.66);
+-webkit-box-shadow: -9px 18px 8px -5px rgba(0,0,0,0.66);
+-moz-box-shadow: -9px 18px 8px -5px rgba(0,0,0,0.66);
+}
+
+.tableForm input,
+.tableForm select,
+.tableForm textarea {
+    width: 100%;
+    max-width: 55%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+.tableForm textarea {
+    resize: vertical;
+    height: auto;
+}
+
+.tableForm label {
+    width: 100%;
+    max-width: 55%;
+    font-weight: 600;
+}
+
+/* Product Section */
+.productSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Category (inline checkboxes) */
+.check-inp { 
+    width: 100%;
+    max-width: 55%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.check-inp > label {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.checkContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.checkboxContainer input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Submit Button */
+.btnSubmit button {
+    padding: 8px 16px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+
+.btnSubmit button:hover {
+    background-color: darkred;
+}
+/* product table*/
+.product-table{
+    width: 70vw;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+.product-table th,
+.product-table td{
+    border: 1px solid gray;
+    padding: 8px;
+
+
+}
+.product-table th{
+    text-align: left;
+    background-color: gray;
+}
+h3{
+    color:#F3A712;
+}
+/* icons*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
